@@ -11,8 +11,8 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 }
 
 :root{
-    --corBackgroundPrimaria: #e46b20;
-    --corBackgroundSecundaria: #802405;
+    --corBackgroundPrimaria: #191970;
+    --corBackgroundSecundaria: #000080;
     --corBackgroundDark:#0e0e0e;
     --corTextPrimaria:#636363;
     --corTextoSecudaria:#000;
@@ -299,4 +299,5 @@ label span{
     header .coluna-direita{
         flex-basis: 70%;
     }
+
 }
