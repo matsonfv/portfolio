@@ -168,7 +168,7 @@ label span{
     width: 20px;
     height: 20px;
     display: block;
-    background-color: #ffd4d4;
+    background-color: #0000CD;
     border-radius: 100%;
     transition: all ease .3s;
 }
@@ -270,8 +270,8 @@ label span{
         animation-duration: 1s, 1s;
         animation-delay: 2s, 3s;
         animation-fill-mode: forwards;
-        border-top-color: #ff5500;
-        border-right-color: #ff5500;
+        border-top-color: #0000CD;
+        border-right-color: #0000CD;
     }
     main .coluna section .baixo-esquerda{
         bottom: -2px;
@@ -280,8 +280,8 @@ label span{
         animation-duration: 1s, 1s;
         animation-delay: 4s, 5s;
         animation-fill-mode: forwards;
-        border-bottom-color: #ff5500;
-        border-left-color: #ff5500;
+        border-bottom-color: #0000CD;
+        border-left-color: #0000CD;
     }
     main .coluna{
         padding: 0;
@@ -301,3 +301,4 @@ label span{
     }
 
 }
+
