@@ -13,7 +13,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 :root{
     --corBackgroundPrimaria: #191970;
     --corBackgroundSecundaria: #000080;
-    --corBackgroundDark:#0e0e0e;
+    --corBackgroundDark:#000;
     --corTextPrimaria:#636363;
     --corTextoSecudaria:#000;
 
@@ -301,5 +301,6 @@ label span{
     }
 
 }
+
 
 
