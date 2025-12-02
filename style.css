@@ -174,7 +174,7 @@ label span{
 }
 
 .ativar-dark:checked ~ .dark-mode label{
-    background-color: #ffd4d4;
+    background-color: #5c5c5c;
 }
 .ativar-dark:checked ~ .dark-mode label span{
     background-color: var(--corBackgroundSecundaria);
@@ -301,4 +301,5 @@ label span{
     }
 
 }
+
 
