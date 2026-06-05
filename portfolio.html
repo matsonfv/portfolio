@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Matson — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ─── NAVBAR ─────────────────────────────────────── -->
+<nav>
+  <a href="#home" class="logo">Matson<span>Lima</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#experience">Experiência</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" aria-label="Alternar tema">
+      <span class="theme-icon sun">☀️</span>
+      <span class="theme-icon moon">🌙</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#about" class="mob-link">Sobre</a>
+  <a href="#experience" class="mob-link">Experiência</a>
+  <a href="#skills" class="mob-link">Habilidades</a>
+  <a href="#projects" class="mob-link">Projetos</a>
+  <a href="#contact" class="mob-link">Contato</a>
+</div>
+
+<!-- ─── HERO ───────────────────────────────────────── -->
+<section id="home" style="max-width:1200px;margin:0 auto;padding-top:120px">
+  <div class="hero-left">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span>Disponível para projetos</span>
+    </div>
+    <h1 class="hero-greeting">
+      Olá, eu sou<br>
+      <span class="name" contenteditable="true" title="Clique para editar">Matson Lima</span>
+    </h1>
+    <p class="hero-role">
+      <span class="typed" id="typedText"></span><span class="cursor-blink">|</span>
+    </p>
+    <p class="hero-desc" contenteditable="true" title="Clique para editar">
+      Desenvolvedor apaixonado por criar experiências digitais únicas. Especializado em transformar ideias complexas em soluções elegantes e performáticas.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">Ver Projetos →</a>
+      <a href="#contact" class="btn-outline">Falar comigo</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" contenteditable="true">2+</span>
+        <span class="stat-label">Anos de exp.</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" contenteditable="true">10+</span>
+        <span class="stat-label">Projetos</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar-img">
+        <img src="/foto-perfil.jpeg"
+      </div>
+      <div class="avatar-glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ──────────────────────────────────────── -->
+<section id="about">
+  <div class="section-label">01 // Sobre</div>
+  <h2 class="section-title reveal">Quem sou <em>eu</em></h2>
+  <div class="about-grid">
+    <div class="about-card reveal">
+      <p class="about-body" contenteditable="true">
+        Sou um desenvolvedor de sistemas com foco em criar produtos que unem design e tecnologia de forma harmoniosa. Tenho paixão por resolver problemas complexos, aliando o uso de Inteligência Artificial com soluções criativas.
+        <br><br>
+        No tempo livre, gosto de explorar novas tecnologias, contribuir com projetos open-source e compartilhar conhecimento com a comunidade dev.
+      </p>
+      <div class="about-tags">
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">n8n</span>
+        <span class="tag">SQLite</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">Google Gemini</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="info-list">
+        <div class="info-row">
+          <span class="info-icon">📍</span>
+          <div>
+            <div class="info-label">Localização</div>
+            <div class="info-val" contenteditable="true">Natal, RN — Brasil</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🎓</span>
+          <div>
+            <div class="info-label">Curso técnico (atual)</div>
+            <div class="info-val" contenteditable="true">Informática para Internet — SENAC</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🎓</span>
+          <div>
+            <div class="info-label">Formação superior</div>
+            <div class="info-val" contenteditable="true">Ciências e Tecnologia — UFRN</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">💼</span>
+          <div>
+            <div class="info-label">Cargo almejado</div>
+            <div class="info-val" contenteditable="true">Desenvolvedor de Sistemas</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">✉️</span>
+          <div>
+            <div class="info-label">E-mail</div>
+            <div class="info-val" contenteditable="true">matson_lima@outlook.com</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🌐</span>
+          <div>
+            <div class="info-label">Idiomas</div>
+            <div class="info-val" contenteditable="true">Português nativo · Inglês Intermediário</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">⚡</span>
+          <div>
+            <div class="info-label">Interesses</div>
+            <div class="info-val" contenteditable="true">Jogos, música, cinema e código</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:1.2rem;display:flex;gap:.8rem;">
+        <a href="/curriculo_matson.pdf" class="btn-primary" style="flex:1;text-align:center;justify-content:center;font-size:.72rem">
+          📄 Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─────────────────────────────────── -->
+<section id="experience">
+  <div class="section-label">02 // Experiência</div>
+  <h2 class="section-title reveal">Trajetória <em>profissional</em></h2>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-period" contenteditable="true">Abr 2024 — Maio 2024 (temporário)</div>
+        <div class="tl-role" contenteditable="true">Auxiliar de Escritório</div>
+        <div class="tl-company" contenteditable="true">🏢 Queijos & Frios Supermercados</div>
+        <p>
+            <p class="tl-desc" contenteditable="true">Lançamento e conferência de notas fiscais de entrada e saída</p>
+            <p class="tl-desc" contenteditable="true">Organização e arquivamento de documentos</p>
+            <p class="tl-desc" contenteditable="true">Apoio no controle de estoque</p>
+            <p class="tl-desc" contenteditable="true">Utilização de sistemas internos para controle administrativo</p>
+        </p>
+        <div class="tl-stack">
+          <span class="tag">Sistema ERP</span><span class="tag">Excel</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-period" contenteditable="true">Jan 2023 — Atual</div>
+        <div class="tl-role" contenteditable="true">Desenvolvedor Frontend Júnior</div>
+        <div class="tl-company" contenteditable="true">🏢 NomeDaEmpresa</div>
+        <p class="tl-desc" contenteditable="true">
+          Liderança técnica do time de frontend, arquitetura de micro-frontends com React + Module Federation, otimização de performance e mentoria de desenvolvedores júnior. Redução de 40% no tempo de carregamento.
+        </p>
+        <div class="tl-stack">
+          <span class="tag">React</span><span class="tag">TypeScript</span>
+          <span class="tag">GraphQL</span><span class="tag">AWS</span><span class="tag">Scrum</span>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+<!-- ─── SKILLS ─────────────────────────────────────── -->
+<section id="skills">
+  <div class="section-label">03 // Habilidades</div>
+  <h2 class="section-title reveal">Stack <em>técnico</em></h2>
+  <div class="skills-grid">
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">
+        <div class="cat-icon">⚛️</div>
+        Frontend
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">React</span><span class="skill-pct">55%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">HTML5 / CSS3</span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-pct">65%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">60%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Vite</span><span class="skill-pct">50%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">
+        <div class="cat-icon">⚙️</div>
+        Backend & Banco de Dados
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Node.js / Express</span><span class="skill-pct">55%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">SQLite</span><span class="skill-pct">60%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">REST API</span><span class="skill-pct">60%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">
+        <div class="cat-icon">🤖</div>
+        IA & Automação
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">n8n (Automações)</span><span class="skill-pct">70%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Google Gemini API</span><span class="skill-pct">55%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Google Drive / Docs API</span><span class="skill-pct">55%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">
+        <div class="cat-icon">🎨</div>
+        Design & Ferramentas
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Figma / UI Design</span><span class="skill-pct">55%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Git / GitHub</span><span class="skill-pct">70%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-name">Comunicação</span><span class="skill-pct">90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── PROJECTS ───────────────────────────────────── -->
+<section id="projects">
+  <div class="section-label">04 // Projetos</div>
+  <h2 class="section-title reveal">Trabalhos <em>selecionados</em></h2>
+  <div class="projects-grid">
+
+    <!-- Featured -->
+    <div class="project-card featured reveal">
+      <span class="featured-badge">★ Destaque</span>
+      <div class="project-thumb">
+        <span class="project-thumb-emoji">🏫</span>
+      </div>
+      <div class="project-body">
+        <div class="project-type">Sistema · Full Stack</div>
+        <div class="project-name">Sistema de Gestão Escolar</div>
+        <p class="project-desc">
+          Plataforma web completa para gerenciamento de alunos, professores e turmas escolares. Conta com cadastro completo com validação de CPF, busca em tempo real, organização por turmas, máscaras automáticas de formulários e API RESTful com Node.js e SQLite.
+        </p>
+        <div class="project-tags" style="display:flex;flex-wrap:wrap;gap:.4rem;margin:.8rem 0;">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+          <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">SQLite</span>
+          <span class="tag">REST API</span><span class="tag">Font Awesome</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/matsonfv/sistema_gestao_escolar0.2/tree/main" class="project-link primary">→ Repositório</a>
+          <a href="https://github.com/matsonfv" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <span class="project-thumb-emoji">🏥</span>
+      </div>
+      <div class="project-body">
+        <div class="project-type">Sistema · Frontend · Saúde</div>
+        <div class="project-name">NTClinical</div>
+        <p class="project-desc">
+          Sistema clínico completo com portais separados para médicos, pacientes e administradores. Inclui agendamento de consultas, dashboard com estatísticas, gestão de pacientes e médicos, agenda interativa com drag-and-drop e suporte a tema claro/escuro.
+        </p>
+        <div class="project-tags" style="display:flex;flex-wrap:wrap;gap:.4rem;margin:.8rem 0;">
+          <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span>
+          <span class="tag">React Router</span><span class="tag">Recharts</span><span class="tag">Radix UI</span>
+          <span class="tag">MUI</span><span class="tag">React DnD</span><span class="tag">Lucide</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/matsonfv" class="project-link primary">→ Repositório</a>
+          <a href="https://github.com/matsonfv" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <span class="project-thumb-emoji">🤖</span>
+      </div>
+      <div class="project-body">
+        <div class="project-type">Automação · IA · Bot</div>
+        <div class="project-name">Bot Telegram com IA</div>
+        <p class="project-desc">
+          Bot para Telegram com múltiplas funcionalidades: geração de documentos PDF via IA, transcrição de áudios com Gladia, busca de notícias via RSS (G1), agente conversacional com memória usando Google Gemini e integração com Google Drive e Docs — tudo orquestrado com n8n.
+        </p>
+        <div class="project-tags" style="display:flex;flex-wrap:wrap;gap:.4rem;margin:.8rem 0;">
+          <span class="tag">n8n</span><span class="tag">Telegram API</span><span class="tag">Google Gemini</span>
+          <span class="tag">Google Drive API</span><span class="tag">Google Docs API</span>
+          <span class="tag">Gladia (STT)</span><span class="tag">RSS</span><span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/matsonfv" class="project-link primary">→ Repositório</a>
+          <a href="https://github.com/matsonfv" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CONTACT ────────────────────────────────────── -->
+<section id="contact">
+  <div class="section-label">05 // Contato</div>
+  <h2 class="section-title reveal">Vamos <em>conversar</em></h2>
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <h3>Aberto a novas oportunidades</h3>
+      <p class="contact-text" contenteditable="true">
+        Se você tem um projeto interessante, uma proposta ou simplesmente quer trocar ideias — minha caixa de entrada está aberta. Responderei o quanto antes!
+      </p>
+      <div class="social-grid">
+        <a href="https://www.linkedin.com/in/matson-lima-078928187/" class="social-item">
+          <div class="social-icon">💼</div>
+          <div class="social-details">
+            <div class="social-name">LinkedIn</div>
+            <div class="social-handle" contenteditable="true">@matson-lima-078928187</div>
+          </div>
+          <span style="color:var(--text3);font-size:.8rem">↗</span>
+        </a>
+        <a href="https://github.com/matsonfv" class="social-item">
+          <div class="social-icon">🐙</div>
+          <div class="social-details">
+            <div class="social-name">GitHub</div>
+            <div class="social-handle" contenteditable="true">@matsonfv</div>
+          </div>
+          <span style="color:var(--text3);font-size:.8rem">↗</span>
+        </a>
+        <a href="https://www.instagram.com/matsonvenceslau/
+        " class="social-item">
+          <div class="social-icon">📸</div>
+          <div class="social-details">
+            <div class="social-name">Instagram</div>
+            <div class="social-handle" contenteditable="true">@matsonvenceslau</div>
+          </div>
+          <span style="color:var(--text3);font-size:.8rem">↗</span>
+        </a>
+        <a href="#" class="social-item">
+          <div class="social-icon">✉️</div>
+          <div class="social-details">
+            <div class="social-name">E-mail</div>
+            <div class="social-handle" contenteditable="true">matson_lima@outlook.com</div>
+          </div>
+          <span style="color:var(--text3);font-size:.8rem">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Nome</label>
+          <input type="text" class="form-control" placeholder="Seu nome completo" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">E-mail</label>
+          <input type="email" class="form-control" placeholder="seu@email.com" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Assunto</label>
+        <input type="text" class="form-control" placeholder="Do que se trata?" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mensagem</label>
+        <textarea class="form-control" placeholder="Conta mais sobre seu projeto ou ideia..."></textarea>
+      </div>
+      <button class="form-submit" id="submitBtn">
+        Enviar mensagem ✦
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <p>© 2026 <span contenteditable="true">Matson Lima</span>. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Back to top -->
+<button class="back-top" id="backTop" aria-label="Voltar ao topo">↑</button>
+
+<!-- ─── SCRIPTS ─────────────────────────────────────── -->
+<script>
+/* ── Theme toggle ── */
+const html = document.documentElement;
+const themeBtn = document.getElementById('themeBtn');
+const saved = localStorage.getItem('theme') || 'dark';
+html.setAttribute('data-theme', saved);
+
+themeBtn.addEventListener('click', () => {
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+
+/* ── Cursor glow ── */
+const glow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+
+/* ── Mobile menu ── */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileClose = document.getElementById('mobileClose');
+const mobLinks = document.querySelectorAll('.mob-link');
+
+hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+mobLinks.forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+/* ── Typed text ── */
+const roles = [
+  'Developer Full Stack',
+  'Open Source Dev',
+  'Problem Solver',
+  'IA & Automations'
+];
+let roleIdx = 0, charIdx = 0, deleting = false;
+const typedEl = document.getElementById('typedText');
+
+function typeLoop() {
+  const current = roles[roleIdx];
+  if (!deleting) {
+    typedEl.textContent = current.substring(0, charIdx + 1);
+    charIdx++;
+    if (charIdx === current.length) {
+      setTimeout(() => { deleting = true; typeLoop(); }, 2200);
+      return;
+    }
+  } else {
+    typedEl.textContent = current.substring(0, charIdx - 1);
+    charIdx--;
+    if (charIdx === 0) {
+      deleting = false;
+      roleIdx = (roleIdx + 1) % roles.length;
+    }
+  }
+  setTimeout(typeLoop, deleting ? 50 : 80);
+}
+typeLoop();
+
+/* ── Scroll reveal ── */
+const reveals = document.querySelectorAll('.reveal');
+const tlItems = document.querySelectorAll('.tl-item');
+const skillFills = document.querySelectorAll('.skill-fill');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+reveals.forEach(el => observer.observe(el));
+tlItems.forEach(el => observer.observe(el));
+
+/* ── Skill bars ── */
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const fill = entry.target;
+      const width = fill.getAttribute('data-width');
+      setTimeout(() => { fill.style.width = width + '%'; }, 200);
+      skillObserver.unobserve(fill);
+    }
+  });
+}, { threshold: 0.3 });
+skillFills.forEach(f => skillObserver.observe(f));
+
+/* ── Back to top ── */
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) backTop.classList.add('visible');
+  else backTop.classList.remove('visible');
+});
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+/* ── Form submit simulation ── */
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', () => {
+  const orig = submitBtn.textContent;
+  submitBtn.textContent = '✓ Mensagem enviada!';
+  submitBtn.style.background = '#1a7a3c';
+  submitBtn.style.boxShadow = '0 0 30px rgba(26,122,60,.4)';
+  setTimeout(() => {
+    submitBtn.textContent = orig;
+    submitBtn.style.background = '';
+    submitBtn.style.boxShadow = '';
+  }, 3000);
+});
+
+/* ── Active nav link on scroll ── */
+const sections = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.id;
+  });
+  navAs.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current
+      ? 'var(--orange)' : '';
+  });
+});
+</script>
+</body>
+</html>
